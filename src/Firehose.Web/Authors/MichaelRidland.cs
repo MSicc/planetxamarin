@@ -4,7 +4,7 @@ using Firehose.Web.Infrastructure;
 
 namespace Firehose.Web.Authors
 {
-    public class MichaelRidland : IAmAXamarinMVP
+    public class MichaelRidland : IAmAXamarinMVP, IAmAMicrosoftMVP
     {
         public string FirstName => "Michael";
 
@@ -14,19 +14,19 @@ namespace Firehose.Web.Authors
 
         public string EmailAddress => "michael@xam-consulting.com";
 
-        public string ShortBioOrTagLine => "";
+        public string ShortBioOrTagLine => "Xamarin Contractor/Consultant | Founder XAM Consulting (xam-consulting.com) | Creator of FreshMvvm";
 
-        public Uri WebSite => new Uri("http://www.michaelridland.com");
+        public Uri WebSite => new Uri("https://michaelridland.com");
 
         public IEnumerable<Uri> FeedUris
         {
-            get { yield return new Uri("http://www.michaelridland.com/feed/"); }
+            get { yield return new Uri("https://michaelridland.com/feed/"); }
         }
 
         public string TwitterHandle => "rid00z";
 
-        public string GravatarHash => "";
-        public string GitHubHandle => string.Empty;
-        public GeoPosition Position => new GeoPosition(-33.8688200, 151.2092960);
+        public string GravatarHash => "3c07e56045d18f4f290eb4983031309d";
+        public string GitHubHandle => "rid00z";
+        public GeoPosition Position => new GeoPosition(-25.348875, 131.035000);
     }
 }
